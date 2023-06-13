@@ -1,4 +1,4 @@
-\*\*\* Binary search is a classic algorithm used to efficiently search for a specific target value within a sorted array or list. It follows a divide-and-conquer approach and repeatedly halves the search space until the target value is found or determined to be absent. Here are the important details, variations, and tips related to binary search:
+Binary search is a classic algorithm used to efficiently search for a specific target value within a sorted array or list. It follows a divide-and-conquer approach and repeatedly halves the search space until the target value is found or determined to be absent. Here are the important details, variations, and tips related to binary search:
 
 # Basic Binary Search Algorithm:
 
