@@ -16,3 +16,26 @@ def two_sum(arr,target):
         else:
             left +=1
     return -1
+
+
+#reverse a string 
+# Input: s = ["h","e","l","l","o"]
+# Output: ["o","l","l","e","h"]
+def string_reversal(s:List[str])->str:
+    left = 0
+    right = len(s)-1
+    while left <= right:
+        s[left],s[right] = s[right],s[left]
+    return s
+
+
+# check if the string is palindrome
+def palindrome(s:str)->None:
+    left = 0
+    right= len(s)-1
+    while left <= right:
+        if s[left] != s[right]:
+            return False
+        left +=1
+        right -=1
+    return True
