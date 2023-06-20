@@ -20,6 +20,37 @@ A subarray can be defined by two indices, the start and end. For example, with [
 
 ---
 
+## Psuedocode and General Template of the Algorithm
+
+```python
+function fn(nums, k):
+    left = 0
+    curr = 0
+    answer = 0
+    for (int right = 0; right < nums.length; right++):
+        curr += nums[right]
+        while (curr > k):
+            curr -= nums[left]
+            left++
+
+        answer = max(answer, right - left + 1)
+
+    return answer
+```
+
+```python
+function fn(arr):
+    left = 0
+    for (int right = 0; right < arr.length; right++):
+        Do some logic to "add" element at arr[right] to window
+
+        while WINDOW_IS_INVALID:
+            Do some logic to "remove" element at arr[left] from window
+            left++
+
+        Do some logic to update the answer
+```
+
 ## When should we use Sliding windows?
 
 There is a very common group of problems involving subarrays that can be solved efficiently with sliding window. Let's talk about how to identify these problems.
