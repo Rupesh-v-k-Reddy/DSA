@@ -48,6 +48,17 @@ def print_graph():
                 print(f'{vertices[i]} -> {vertices[j]} \
                          edge weight : {graph[i][j]}')
 
+
+def remove_edges(v1,v2):
+    global graph
+    #because of the 0 indexing of lists
+    if graph[v1-1][v2-1] == 0:
+        print(f'no edge between {v1} and {v2}')
+        return 
+    else:
+        graph[v1][v2] =0
+        graph[v2][v1] =0
+
 #driver code
 add_vertex(1)
 add_vertex(2)
