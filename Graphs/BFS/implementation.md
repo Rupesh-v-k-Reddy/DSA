@@ -1,6 +1,7 @@
 # BFS on graph Template
 
 **bfs** : uses a queue to keep track of the nodes to be visited
+<br>
 **get_neighbors** :returns a node's neighbors.In an adjacency list representation, this would be returning the list of neighbors for the node. If the problem is about a matrix, this would be the surrounding valid cells
 
 ```python
