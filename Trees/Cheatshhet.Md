@@ -141,10 +141,7 @@ def rightSideView(root):
 
 For each node, all values in its left subtree are less than the value in the node, and all values in its right subtree are greater than the value in the node.
 
-<aside>
-📢 Trivia to know: an inorder DFS traversal prioritizing left before right on a BST will handle the nodes in sorted order.
-
-</aside>
+> 📢 Trivia to know: an inorder DFS traversal prioritizing left before right on a BST will handle the nodes in sorted order.
 
 ```python
 # min absolute diff val trick
