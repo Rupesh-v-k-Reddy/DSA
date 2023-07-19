@@ -137,6 +137,18 @@ def rightSideView(root):
 #level order traversal = [[3],[9,20],[15,7]]
 ```
 
+### Construct a Binary Tree from preorder and inorder Traversals
+
+```python
+if not preorder or not inorder:
+            return None
+        root = TreeNode(preorder[0])
+        mid = inorder.index(preorder[0])
+        root.left = self.buildTree(preorder[1 : mid + 1], inorder[:mid])
+        root.right = self.buildTree(preorder[mid + 1 :], inorder[mid + 1 :])
+        return root
+```
+
 ## BST
 
 For each node, all values in its left subtree are less than the value in the node, and all values in its right subtree are greater than the value in the node.
