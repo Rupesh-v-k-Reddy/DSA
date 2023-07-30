@@ -1,9 +1,3 @@
-# Arrays Cheat sheet
-
-Created: July 29, 2023 10:35 AM
-Updated: July 29, 2023 11:36 AM
-Status: Open
-
 ## Two Pointers
 
 ```python
