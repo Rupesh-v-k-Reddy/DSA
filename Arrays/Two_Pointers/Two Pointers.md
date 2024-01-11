@@ -103,4 +103,4 @@ These are just a few examples, and the two-pointer method can be applied in many
 ## Closing Notes
 
 Remember that the methods laid out here are just guidelines. For example, in the first method, we started the pointers at the first and last index, but sometimes you might find a problem that involves starting the pointers at different indices. In the second method, we moved two pointers forward along two different inputs. Sometimes, there will only be one input array/string, but we still initialize both pointers at the first index and move both of them forward.
-$$o(n)$$
+
